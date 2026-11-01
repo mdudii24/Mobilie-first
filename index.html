@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Твой зеленый друг</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+        <input type="checkbox" class="menu__toggler">
+        <div class="menu__container">
+            <a href="" class="menu__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <button class="menu__burger-button">
+                <div class="menu__center-line"></div>
+            </button>
+        </div>
+        <div class="menu__items">
+            <a href="" class="menu__item">Доставка</a>
+            <a href="" class="menu__item">Наша фишка</a>
+            <a href="" class="menu__item">Топ растений</a>
+            <a href="" class="menu__item">Карта</a>
+            <a href="" class="menu__item">Заказ звонка</a>
+
+        </div>
+    </nav>
+    <header class="header">
+        <picture class="header__image">
+            <source media="(max-width:400px )" srcset="img/header-mobile-p.png">
+            <source media="(max-width: 700px) and (max-height: 400px)" srcset="img/header-mobile-l.png">
+            <source media="(max-width: 768px) and (max-height: 1024px)" srcset="img/header-tablet-p.png">
+            <source media="(max-width: 1024px) and (max-height: 768px)" srcset="img/header-tablet-l.png">
+            <source media="(min-width: 1025px)" srcset="img/header-desktop.png">
+            <img src="img/header-mobile-p.png" alt="">
+            
+        </picture>
+        <h1 class="header__title">Твой <span class="green-font">зеленый</span> <span class="blue-font">комнатный</span>  друг</h1>
+    </header>
+    <main class="main">
+        <section class="delivery">
+            <div>
+
+                <div class="delivery__header">
+                    <img src="img/section2-logo.svg" alt="" class="delivery__image">
+                    <h2 class="delivery__title">Комнатные растения с доставкой</h2>
+                </div>
+                <p class="delivery__description">
+                    Заказывай у нас комнатные растения. Доставка бесплатно. А еще мы будем раз в месяц привозить тебе необходимые вещи, чтобы растение цвело и доставляло тебе радость
+                </p>
+            </div>
+        </section>
+        <section class="feature">
+            <div>
+
+                <div class="feature__header">
+                    <img src="img/section3-logo.svg" alt="" class="feature__image">
+                    <h2 class="feature__title">Селекция будущего</h2>
+                </div>
+                <p class="feature__description">
+                    Наши растения выведены с использованием современной генной инженерии и последних достижений садоводства. Они неприхотливы, но при этом выделяют в 100 раз больше кислорода чем обычные растения
+                </p>
+            </div>
+        </section>
+        <section class="bestsellers">
+            <h2 class="bestsellers__title">Топ наших растений</h2>
+            <ul class="bestsellers__cards">
+                <li class="bestsellers__item">
+                    <img src="img/bestsellers1.png" alt="" class="bestsellers__image">
+                    <h3 class="bestsellers__name">Растение 1</h3>
+                </li>
+                <li class="bestsellers__item">
+                    <img src="img/bestsellers2.png" alt="" class="bestsellers__image">
+                    <h3 class="bestsellers__name">Растение 2</h3>
+                </li>
+                <li class="bestsellers__item">
+                    <img src="img/bestsellers3.png" alt="" class="bestsellers__image">
+                    <h3 class="bestsellers__name">Растение 3</h3>
+                </li>
+                <li class="bestsellers__item">
+                    <img src="img/bestsellers4.png" alt="" class="bestsellers__image">
+                    <h3 class="bestsellers__name">Растение 4</h3>
+                </li>
+            </ul>
+        </section>
+        <section class="form">
+            <h2 class="form__title">Заказать обратный звонок</h2>
+            <form action="" class="form__body">
+                <div class="form__email">
+                    <label for="email" class="form__email-label">E-mail</label>
+                    <input type="email" name="email" id="email" class="form__email-input">
+                </div>
+                <div class="form__phone">
+                    <label for="phone" class="form__phone-label">Телефон для связи</label>
+                    <input type="text" name="phone" id="phone" class="form__phone-input">
+                </div>
+                <button class="form__button">Отправить данные</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
